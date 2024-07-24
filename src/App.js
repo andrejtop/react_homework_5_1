@@ -1,24 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import Card from './components/Card';
 
+// Функциональный компонент приложения
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Card title="Limited Offer!" text="Limited time offer: Get 10 free Adobe Stock images." link="#" linkText="Get It!">
+        <img src="https://bytepix.ru/ib/oqXZBGoNpx.png" className="card-img-top" alt="..." />
+      </Card>    
+    </>
   );
 }
 
